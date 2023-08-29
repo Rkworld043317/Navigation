@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .headernav {
+        width: 1280px;
+        height: 50px;
+        background: #333;
+        margin: 20px auto;
+      }
+      .headernav > ul {
+        list-style: none;
+      }
+      .headernav > ul > li {
+      
+        float: left;
+      }
+      .headernav > ul > li:hover > a{
+        background: orangered;
+      }
+      .headernav > ul > li > a{
+        display: inline-block;
+       
+        height: 12px;
+        line-height: 12px;
+        padding: 19px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .active{
+        background: orangered;
+      }
+      
+      .submenu{
+        
+       
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        list-style: none;
+        padding-left: 0px;
+        display: none;
+
+      }
+
+      .menu > li{
+        position: relative;
+      }
+
+      .submenu > li > a{
+        width: 224px;
+        height: 60px;
+        display: inline-block;
+        background: rgb(223, 193, 183);
+        color: #362c2c;
+        text-decoration: none;
+        line-height: 60px;
+        padding-left: 26px;
+    
+      }
+
+   .menu > li:hover > .submenu a:hover{
+        background: orangered;
+      }
+
+      .submenu1{
+        width: 250px;
+        height: 300px;
+        display: inline-block;
+        background: rgb(203, 75, 33);
+        position: absolute;
+        top: 0px;
+        left: 250px !important;
+        list-style: none;
+        display: none;
+
+      }
+
+      .submenu > li{
+        position: relative;
+      }
+
+      .menu li:hover>.submenu{
+        display: block;
+      }
+ 
+    </style>
+</head>
+<body>
+    <nav class="headernav">
+        <ul class="menu">
+            <li><a href="#">Company logs</a></li>
+            <li ><a href="#" class="active" >Active</a></li>
+            <li>
+                <a href="#">Drop Down</a>
+                <ul class="submenu">
+                    <li><a href="#">item 1</a></li>
+                    <li>
+                        <a href="#">item Right side</a>
+                        <ul class="submenu submenu1">
+                            <li><a href="#">level 1</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                      <a href="#">item 3</a>
+                      <ul class="submenu submenu1 submenu2">
+                      <li><a href="#">level1</a></li>
+                      <li><a href="#">level1</a></li>
+                      <li><a href="#">level1</a></li>
+                      <li><a href="#">level1</a></li>
+                      <li><a href="#">level1</a></li>
+                      <li><a href="#">level1</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">item left side</a></li>
+                    <li><a href="#">item 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Mega menu</a></li>
+            <li><a href="#">Grid</a></li>
+            <li><a href="#">Tab Bar</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Contect</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
